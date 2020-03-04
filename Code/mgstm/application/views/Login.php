@@ -12,20 +12,20 @@ if ($_POST){
 	//veri tabanından verileri ayıklamadan alma kodu
 	$result = $this->veritabanimodeli->getir($username,$password);
 	print_r($result);
-	$resim=$result['ResimYol'];
-	print_r($resim);
+	//$resim=$result['ResimYol'];
+	//print_r($resim);
 
 
 	//result ne dönüyor diye kontrol
 	if($result==null){
 		echo "<br>";
 		echo "işlem başarısız";
-		//header("Location:Test");
+		header("Location:Test");
 	}
 	else{
 		echo "<br>";
 		echo "işlem başarılı";
-		//header("Location:yapilacaklar");
+		header("Location:yapilacaklar");
 	}
 
 

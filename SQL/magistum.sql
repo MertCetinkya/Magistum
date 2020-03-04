@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: localhost
--- Üretim Zamanı: 04 Mar 2020, 07:40:16
+-- Üretim Zamanı: 04 Mar 2020, 07:53:07
 -- Sunucu sürümü: 8.0.17
 -- PHP Sürümü: 7.3.10
 
@@ -62,6 +62,14 @@ CREATE TABLE `liste` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
+-- Tablo döküm verisi `liste`
+--
+
+INSERT INTO `liste` (`Id`, `Tanim`, `Aciklama`, `State`) VALUES
+(9, 'sil', 'camları sil', NULL),
+(10, 'sil', 'camları sil', NULL);
+
+--
 -- Dökümü yapılmış tablolar için indeksler
 --
 
@@ -91,7 +99,7 @@ ALTER TABLE `bilgiler`
 -- Tablo için AUTO_INCREMENT değeri `liste`
 --
 ALTER TABLE `liste`
-  MODIFY `Id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `Id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
