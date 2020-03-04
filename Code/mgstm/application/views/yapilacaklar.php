@@ -37,11 +37,11 @@ foreach($query as $meyve) {
 		<br/>
 		<button type="submit" formaction="UpdatePage"> Düzele</button>
 		<button type="submit" formaction="DeletePage" style="padding-left:10px; "> Sil</button>
-
+		<button type="submit" formaction="Yapilacaklarekle">Yeni Yapılacak İş Ekle</button>
 	</form>
 	<?php 
 } 
 ?>
 
-<button type="submit" formaction="Yapilacaklarekle">Yapılacak İş Ekle</button>
+
 </html>
