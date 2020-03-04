@@ -50,6 +50,11 @@ class veritabanimodeli extends CI_Model{
 
 		return $query->result();
 	}
+
+	public function Yekle($ek){
+			return $this->db->insert('liste', $ek);
+
+	}
 }
 
 ?>
